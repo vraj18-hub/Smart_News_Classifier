@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { QA } from "@/components/news/QA";
+export const Route = createFileRoute("/qa")({ head:()=>({meta:[{title:"Ask Questions About News | Signal Desk"},{name:"description",content:"Ask grounded questions about a selected news article and view supporting context."},{property:"og:title",content:"Ask Questions About News | Signal Desk"},{property:"og:description",content:"Ask grounded questions about a selected news article and view supporting context."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}), component:QA });

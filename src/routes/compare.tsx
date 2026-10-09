@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { Compare } from "@/components/news/Compare";
+export const Route = createFileRoute("/compare")({ head:()=>({meta:[{title:"Compare News Articles | Signal Desk"},{name:"description",content:"Compare articles for semantic similarity, duplicate risk, sentiment, and shared signals."},{property:"og:title",content:"Compare News Articles | Signal Desk"},{property:"og:description",content:"Compare articles for semantic similarity, duplicate risk, sentiment, and shared signals."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}), component:Compare });

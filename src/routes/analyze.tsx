@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { Analyzer } from "@/components/news/Analyzer";
+export const Route = createFileRoute("/analyze")({ head:()=>({meta:[{title:"Analyze a News Article | Signal Desk"},{name:"description",content:"Classify news and extract sentiment, keywords, entities, topics, summaries, and n-grams."},{property:"og:title",content:"Analyze a News Article | Signal Desk"},{property:"og:description",content:"Classify news and extract sentiment, keywords, entities, topics, summaries, and n-grams."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}), component:Analyzer });

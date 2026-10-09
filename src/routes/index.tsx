@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { Dashboard } from "@/components/news/Dashboard";
+export const Route = createFileRoute("/")({ head:()=>({meta:[{title:"Smart News Classifier Dashboard | Signal Desk"},{name:"description",content:"Monitor article categories, sentiment, and trending topics."},{property:"og:title",content:"Smart News Classifier Dashboard | Signal Desk"},{property:"og:description",content:"Monitor article categories, sentiment, and trending topics."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}), component:Dashboard });

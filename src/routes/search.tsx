@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { SearchPage } from "@/components/news/SearchPage";
+export const Route = createFileRoute("/search")({ head:()=>({meta:[{title:"Semantic News Search | Signal Desk"},{name:"description",content:"Search news articles by meaning, category, and relevance."},{property:"og:title",content:"Semantic News Search | Signal Desk"},{property:"og:description",content:"Search news articles by meaning, category, and relevance."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}), component:SearchPage });
